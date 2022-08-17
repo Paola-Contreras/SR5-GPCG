@@ -22,12 +22,12 @@ rend = Renderer(w, h)
 #rend.glLookAt(position,V3(0,-4,0))
 
 #Medium
-#position = V3(7,3,2)
-#rend.glLookAt(position,V3(2,1,-2))
+position = V3(7,3,2)
+rend.glLookAt(position,V3(2,1,-2))
 
 #Dutch
-position = V3(2,-1.2,1)
-rend.glLookAt(position,V3(0, -2, -0.5))
+#position = V3(2,-1.2,1)
+#rend.glLookAt(position,V3(0, -2, -0.5))
 
 
 #MAIN
@@ -36,7 +36,7 @@ rend.active_texture = Texture("model/earthDay.bmp")
 
 rend.glLoadModel("model/coffee.obj",
                   translate = position,
-                  rotate = V3(-10, 0, 0),
+                  rotate = V3(0, 0, 0),
                   scale = V3(1.5,1.5,1.5))
 
 rend.glFinish("Dutch_angle.bmp")
